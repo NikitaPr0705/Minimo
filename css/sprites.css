@@ -1,0 +1,22 @@
+.instagram, .twitter, .facebook{
+	background: url(sprites.png) no-repeat;
+}
+
+.instagram{
+	background-position: -35.00001525878906px 0;
+	width: 15px;
+	height: 15px;
+}
+
+.twitter{
+	background-position: 0 0;
+	width: 18px;
+	height: 13px;
+}
+
+.facebook{
+	background-position: -67px -1px ;
+	width: 8px;
+	height: 14px;
+}
+
