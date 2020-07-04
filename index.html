@@ -3,13 +3,40 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="stylesheet" href="css/outlines.css"> -->
-        <link rel="stylesheet" href="css/normalizemain.css">
+<!--         <link rel="stylesheet" href="src/scss/outlines.css">-->
+        <link rel="stylesheet" href="src/scss/normalize.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <title>Minimo</title>
+
+        <!-- Pixel Glass -->
+        <style>
+            HTML {
+                background-repeat: no-repeat;
+                background-position:  50% 0;
+                /* По умолчанию показывается мобильный макет */
+                /*background-image: url( "img/320.png" );*/
+            }
+            /* Планшет */
+            /*@media ( min-width: 760px ) {*/
+            /*    HTML {*/
+            /*        !* Планшетный макет *!*/
+            /*        background-image: url( "img/760.png" );*/
+            /*    }*/
+            /*}*/
+            /* Десктоп */
+            @media ( min-width: 960px ) {
+                HTML {
+                    /* Десктопный макет */
+                    background-image: url( "src/images/minimo_01.jpg" );
+                }
+            }
+        </style>
+        <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+        <script src="../node_modules/pixel-glass/script.js"></script>
+        <!-- // Pixel Glass -->
     </head>
     <body class="body page-body">
         <header class="main-header main-header--indent">
@@ -27,6 +54,7 @@
         </header>
         <main class="main page-main">
             <div class="main--wrapper main--wrapper-indent">
+                <img class="main__image" src="src/images/main-girls.jpg" alt="">
             <h1 class="visually-hidden">Minimo</h1>
             <article class="article__main article__main--indent">
                 <p class="article__category article__category--indent">photodiary</p>
@@ -37,25 +65,25 @@
                 <section class="articles__section articles__section--indent">
                     <ul class="articles__list articles__list--indent">
                 <li class="articles__item article-one articles__item--indent">
-                    <img class="articles__image articles__image--indent" src="./img/dancing-girl.jpg" alt="Dancing girl">
+                    <img class="articles__image articles__image--indent" src="src/images/dancing-girl.jpg" alt="Dancing girl">
                     <p class="articles__category-name articles__category-name--indent">lifestyle</p>
                     <h2 class="articles__headline articles__headline-indent">More than just a music festival </h2>
                     <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                 </li>
                 <li class="articles__item article-two articles__item--indent">
-                    <img class="articles__image articles__image--indent" src="./img/cup-of-coffee.jpg" alt="Cup of coffee">
+                    <img class="articles__image articles__image--indent" src="src/images/cup-of-coffee.jpg" alt="Cup of coffee">
                         <p class="articles__category-name articles__category-name--indent">lifestyle</p>
                         <h2 class="articles__headline articles__headline-indent">Life tastes better with coffee</h2>
                         <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     </li>
                     <li class="articles__item article-three articles__item--indent">
-                        <img class="articles__image articles__image--indent" src="./img/bridge-girls.jpg" alt="Bridge girls">
+                        <img class="articles__image articles__image--indent" src="src/images/bridge-girls.jpg" alt="Bridge girls">
                             <p class="articles__category-name articles__category-name--indent">photodiary</p>
                             <h2 class="articles__headline articles__headline-indent">American dream</h2>
                             <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                         </li>
                         <li class="articles__item article-four articles__item--indent">
-                            <img class="articles__image articles__image--indent" src="./img/back-guy.jpg" alt="Back guy">
+                            <img class="articles__image articles__image--indent" src="src/images/back-guy.jpg" alt="Back guy">
                                 <p class="articles__category-name articles__category-name--indent">photodiary</p>
                                 <h2 class="articles__headline articles__headline-indent">A day exploring the Alps</h2>
                                 <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
@@ -80,13 +108,13 @@
                 <section class="articles__section articles__section--indent">
                     <ul class="articles__list articles__list--indent articles__list-second--indent">
                     <li class="articles__item articles__item--indent">
-                            <img class="articles__image articles__image--indent" src="./img/road-girl.jpg" alt="Road girl">
+                            <img class="articles__image articles__image--indent" src="src/images/road-girl.jpg" alt="Road girl">
                         <p class="articles__category-name articles__category-name--indent">lifestyle</p>
                         <h2 class="articles__headline articles__headline-indent">Top 10 song for running</h2>
                         <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     </li>
                     <li class="articles__item articles__item--indent">
-                            <img class="articles__image articles__image--indent" src="./img/snow-road.jpg" alt="Snow road">
+                            <img class="articles__image articles__image--indent" src="src/images/snow-road.jpg" alt="Snow road">
                             <p class="articles__category-name articles__category-name--indent">lifestyle</p>
                             <h2 class="articles__headline articles__headline-indent">Cold winter days</h2>
                             <p class="articles__item-text articles__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
@@ -111,17 +139,17 @@
                 <ul class="social-links__list social-links__list--indent">
                     <li>
                         <a class="social-links__list-item fb" href="#">
-                            <img src="./img/facebook.png" alt="Facebook link">
+                            <img src="src/images/facebook.png" alt="Facebook link">
                         </a>
                     </li>
                     <li>
                         <a class="social-links__list-item tw" href="#">
-                            <img src="./img/twitter.png" alt="Twitter link">
+                            <img src="src/images/twitter.png" alt="Twitter link">
                         </a>
                     </li>
                     <li>
                         <a class="social-links__list-item in" href="#">
-                            <img src="./img/instagram.png" alt="Instagram link">
+                            <img src="src/images/instagram.png" alt="Instagram link">
                         </a>
                     </li>
                 </ul>
