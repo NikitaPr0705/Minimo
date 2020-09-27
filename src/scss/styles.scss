@@ -157,6 +157,8 @@ input[type="radio"].visually-hidden {
           text-transform: uppercase;
           color: #c7c1b6;
         }
+
+
       }
 
       .article__main--indent {
@@ -227,6 +229,8 @@ input[type="radio"].visually-hidden {
             margin-bottom: 115px;
           }
         }
+
+
       }
 
       .articles__section--indent {
@@ -305,6 +309,10 @@ input[type="radio"].visually-hidden {
 
       .articles__list-second--indent {
         margin-top: 47px;
+      }
+
+      .btn__load-more {
+        cursor: pointer;
       }
     }
 
