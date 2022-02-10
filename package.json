@@ -22,7 +22,7 @@
   "homepage": "https://github.com/NikitaPr0705/Minimo#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
     "pixel-glass": "^1.0.13"
